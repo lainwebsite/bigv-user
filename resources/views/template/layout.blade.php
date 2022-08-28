@@ -16,8 +16,8 @@
 		n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
 	}(window, document);
 	</script>
-	<link href="{{asset('assets/62fc7ade5c97db37a9c73a71_Fevicon%20Fs.png')}}" rel="shortcut icon" type="image/x-icon" />
-	<link href="{{asset('assets/62fc7ade5c97dbb57fc73a73_WEbclip%20FS.png')}}" rel="apple-touch-icon" />
+	<link href="{{asset('assets/favicon.png')}}" rel="shortcut icon" type="image/x-icon" />
+	<link href="{{asset('assets/favicon.png')}}" rel="apple-touch-icon" />
 	<style>
 	* {
 		-webkit-font-smoothing: antialiased;
