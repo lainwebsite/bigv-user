@@ -144,29 +144,6 @@ Product Name - Big V
             <div class="orange-text">1</div>
         </a>
     </div>
-    <div class="categories-section">
-        <div class="heading-large text-align-center">Categories</div>
-        <div class="categories-grid">
-            <div id="w-node-c44e06b6-1fd7-912b-e121-826bd7a8eef1-fac73a6c" class="categories-card cat-1-color"><img src="{{asset('assets/62fc7f0ee2b4118e2f35c5d6_image%2034.png')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white margin-left padding-small">Cooked Food</div>
-            </div>
-            <div class="categories-card cat-2-color"><img src="{{asset('assets/62fccd5cb02a381d35ef3d4e_image 35 (1).webp')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white padding-left padding-small">Bakery</div>
-            </div>
-            <div class="categories-card cat-3-color"><img src="{{asset('assets/62fccd5cb02a38b24def3d46_image 35 (2).webp')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white padding-left padding-small">Vegan &amp; Glutten Free</div>
-            </div>
-            <div class="categories-card categories-bottom cat-4-color"><img src="{{asset('assets/62fccd5cb02a38a37aef3d48_image 35 (3).webp')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white padding-left padding-small">Muslim Owned</div>
-            </div>
-            <div class="categories-card categories-bottom cat-5-color"><img src="{{asset('assets/62fccd5cb02a380d2cef3d4a_image 35 (4).webp')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white padding-left padding-small">Beauty</div>
-            </div>
-            <div class="categories-card categories-bottom cat-6-color"><img src="{{asset('assets/62fccd5cb02a3831ebef3d4c_image 35 (5).webp')}}" loading="lazy" alt="" class="category-image" />
-                <div class="text-rich-text text-size-large text-weight-bold text-color-white padding-left padding-small">Others</div>
-            </div>
-        </div>
-    </div>
 </div>
 <div class="cursor">
     <div data-w-id="f4b78bbc-ea93-bb5a-a490-cac406bb401d" class="dot"></div>
