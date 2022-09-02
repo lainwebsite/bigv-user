@@ -286,6 +286,14 @@ Product Name - Big V
         </div>
     </div>
 </div>
+<div class="pagination flex justify-center margin-large">
+    <a href="#" class="pagination-selected text-style-none">
+        <div class="text-color-white">1</div>
+    </a>
+    <a href="#" class="pagination-not-selected text-style-none">
+        <div class="orange-text">1</div>
+    </a>
+</div>
 </div>
 <div data-w-id="1469b1e8-77d5-4eda-0931-cc24293decef" style="-webkit-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="atc-popup">
 <div class="c-product-form w-form">

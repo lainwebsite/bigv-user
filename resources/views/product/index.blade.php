@@ -49,9 +49,15 @@ Product Name - Big V
                             <input type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1" /><span class="text-size-small w-form-label" for="checkbox-2">Others</span></label>
                         <label for="email">Price</label>
                         <div class="flex justify-left" style="gap: 5px;">
-                            <input type="number" class="quantity-pill-small price-range-filter">
+                            <div class="relative">
+                                <input type="number" class="quantity-pill-small price-range-filter" min="0">
+                                <p class="float-price">$</p>
+                            </div>
                             <p class="margin-0">-</p>
-                            <input type="number" class="quantity-pill-small price-range-filter">
+                            <div class="relative">
+                                <input type="number" class="quantity-pill-small price-range-filter" min="0">
+                                <p class="float-price">$</p>
+                            </div>
                         </div>
                         <input type="submit" value="Filter" class="submit-button atc-button margin-top w-button" style="margin-top: 20px;" />
                     </form>

@@ -92,7 +92,11 @@ input[type=number] {
 
 .price-range-filter{
   width: 90px !important;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 0 25px;
+}
+
+.float-price{
+  position: absolute; top: 0; line-height:36px; left: 10px;
 }
 
 .justify-left{
