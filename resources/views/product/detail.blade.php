@@ -10,10 +10,13 @@ Product Name - Big V
 @endsection
 
 @section('content')
+<?php $shareLink = "https://my.ubaya.ac.id"; ?>
+<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="7vBOYaJD"></script>
 <div class="content">
 <div style="margin-bottom: 1rem;">
     <img src="{{asset('assets/6303b67a5064f05035c5a701_shape 1.svg')}}" loading="lazy" alt="" class="absolute shape-1 ea-right" />
-    <div class="product-hero" id="productDetail">
+    <div class="product-hero">
         <div class="content-col col--width-50 display-none">
             <img src="{{asset('assets/6308e8ded34a4e6728a0f147_image%2031.jpg')}}" sizes="100vw" srcset="{{asset('assets/6308e8ded34a4e6728a0f147_image%2031.jpg')}}" alt="" class="image-9 card27" />
             <img src="{{asset('assets/6308e8dff31701dadd206186_image%2032.jpg')}}" sizes="100vw" srcset="{{asset('assets/6308e8dff31701dadd206186_image%2032.jpg')}}" alt="" class="image-9 card27" />
@@ -40,53 +43,81 @@ Product Name - Big V
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="content-col col--width-50">
+        <div class="content-col col--width-50" id="productDetail">
             <div class="div-block-5 ea-up">
                 <div class="product-info">
                     <h5 class="heading-4 inline text-weight-normal padding-right padding-xsmall text-color-grey">Food and Beverage</h5>
                     <h5 class="heading-4 inline text-weight-normal padding-right padding-xsmall text-color-grey"> &gt; </h5>
                     <h5 class="heading-4 inline text-weight-normal padding-right padding-xsmall text-color-grey">Chinese New Year</h5>
                     <h2 class="product-name heading-2 text-color-grey margin-vertical margin-xsmall">Shield Pearl Gi (Men)</h2>
-                    <div class="c-product-rating">
-                        <div class="flex">
-                            <div class="c-product-rating__star">
-                                <div class="icon">
-                                    <div class="fas fa-star">
-                                        <img src="{{asset('assets/Star 1.svg')}}" loading="lazy" alt="" />
+                    <div class="flex" style="justify-content: space-between;">
+                        <div class="c-product-rating">
+                            <div class="flex">
+                                <div class="c-product-rating__star">
+                                    <div class="icon">
+                                        <div class="fas fa-star">
+                                            <img src="{{asset('assets/Star 1.svg')}}" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-product-rating__star">
+                                    <div class="icon">
+                                        <div class="fas fa-star">
+                                            <img src="{{asset('assets/Star 1.svg')}}" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-product-rating__star">
+                                    <div class="icon">
+                                        <div class="fas fa-star">
+                                            <img src="{{asset('assets/Star 2.svg')}}" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-product-rating__star">
+                                    <div class="icon">
+                                        <div class="fas fa-star">
+                                            <img src="{{asset('assets/Star 3.svg')}}" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-product-rating__star">
+                                    <div class="icon">
+                                        <div class="fas fa-star">
+                                            <img src="{{asset('assets/Star 3.svg')}}" loading="lazy" alt="" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="c-product-rating__star">
-                                <div class="icon">
-                                    <div class="fas fa-star">
-                                        <img src="{{asset('assets/Star 1.svg')}}" loading="lazy" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="c-product-rating__star">
-                                <div class="icon">
-                                    <div class="fas fa-star">
-                                        <img src="{{asset('assets/Star 2.svg')}}" loading="lazy" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="c-product-rating__star">
-                                <div class="icon">
-                                    <div class="fas fa-star">
-                                        <img src="{{asset('assets/Star 3.svg')}}" loading="lazy" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="c-product-rating__star">
-                                <div class="icon">
-                                    <div class="fas fa-star">
-                                        <img src="{{asset('assets/Star 3.svg')}}" loading="lazy" alt="" />
-                                    </div>
-                                </div>
+                            <h5 class="heading-4 p-beside-star">4.9 (300 rating)</h5>
+                            <h5 class="heading-4 p-beside-star">1.000 sold</h5>
+                        </div>
+                        <div class="share-dialog">
+                            <header class="share-header">
+                                <h3 class="dialog-title">Share Product</h3>
+                                <button class="close-button share-media-button share-svg"><svg><use href="#close"></use></svg></button>
+                            </header>
+                            <div class="link">
+                                <div id="shareLink" class="pen-url"><?= $shareLink ?></div>
+                                <button class="copy-link share-media-button" id="copyLink">Copy Link</button>
                             </div>
                         </div>
-                        <h5 class="heading-4 p-beside-star">4.9 (300 rating)</h5>
-                        <h5 class="heading-4 p-beside-star">1.000 sold</h5>
+                        <button class="share-button" type="button" title="Share this product">
+                            <svg class="share-btn-svg">
+                                <use href="#share-icon"></use>
+                            </svg>
+                            <span class="small">Share</span>
+                        </button>
+                        <svg class="hidden">
+                            <defs>
+                                <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
+                                <symbol id="facebook" viewBox="0 0 24 24" fill="#3b5998" stroke="#3b5998" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></symbol>
+                                <symbol id="twitter" viewBox="0 0 24 24" fill="#1da1f2" stroke="#1da1f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></symbol>
+                                <symbol id="email" viewBox="0 0 24 24" fill="#777" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></symbol>
+                                <symbol id="linkedin" viewBox="0 0 24 24" fill="#0077B5" stroke="#0077B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></symbol>
+                                <symbol id="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></symbol>
+                            </defs>
+                        </svg>
                     </div>
                     <h3 class="heading-3 margin-vertical margin-xsmall">$129.99</h3>
                     <div class="div-line"></div>
@@ -179,7 +210,8 @@ Product Name - Big V
                         </div>
                     </div>
                     <h5 class="heading-4 p-beside-star">4.9 (300 rating)</h5>
-                    <h5 class="heading-4 p-beside-star">1.000 sold</h5></div>
+                    <h5 class="heading-4 p-beside-star">1.000 sold</h5>
+                </div>
             </div>
         </div>
         <a href="#" class="text-style-link margin-right div-block-7">
@@ -187,7 +219,8 @@ Product Name - Big V
         </a>
     </div>
     <div class="div-line"></div>
-    <p class="paragraph-2 text-color-grey mb-3">Farewell to the year of Ox, and the Year of Tiger on the way! Over here we launch our cute “Cute Tiger Aroma Stone Set” to welcome the New Year.The stone set is decorated with the festive red dried flowers paired with a blessed essential oil blend and a cute tiger aroma stone! It signifies peace, prosperity, good health, good luck, good dreams, happiness, wealth and all the good things come to you in the “Tiger year”</p>
+    <h4 class="text-color-grey mb-2">Product Description</h4>
+    <p class="paragraph-2 text-color-grey mb-3" style="max-width: 500px;">Farewell to the year of Ox, and the Year of Tiger on the way! Over here we launch our cute “Cute Tiger Aroma Stone Set” to welcome the New Year.The stone set is decorated with the festive red dried flowers paired with a blessed essential oil blend and a cute tiger aroma stone! It signifies peace, prosperity, good health, good luck, good dreams, happiness, wealth and all the good things come to you in the “Tiger year”</p>
     <div class="div-block-9">
         <div id="w-node-_274f20e5-cf76-d21b-b2d2-1fb0375edc27-fac73a6b">
             <h4 class="text-color-grey mb-2">Additional Information</h4>
@@ -382,6 +415,40 @@ Product Name - Big V
                 $(".product-quantity").val(qty -1);
             }
         }
+    });
+
+    var shareLink = "<?= $shareLink ?>";
+
+    const shareButton = document.querySelector('.share-button');
+    const shareDialog = document.querySelector('.share-dialog');
+    const closeButton = document.querySelector('.close-button');
+
+    shareButton.addEventListener('click', event => {
+        if (navigator.share) { 
+            navigator.share({
+                title: 'Big V - Share Product',
+                url: shareLink // product link
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            })
+            .catch(console.error);
+        } else {
+            shareDialog.classList.add('is-open');
+        }
+    });
+
+    closeButton.addEventListener('click', event => {
+        shareDialog.classList.remove('is-open');
+    });
+
+    $(document).on('click', "#copyLink", function(){
+        navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+            if (result.state == "granted" || result.state == "prompt") {
+                alert("Write access granted!");
+            }
+        });
+        navigator.clipboard.writeText(shareLink); //product link
+        $("#copyLink").html("Link Copied");
     });
 </script>
 @endsection
